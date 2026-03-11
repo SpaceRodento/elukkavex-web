@@ -1,11 +1,12 @@
-# Elukkavex — Web-dashboard ja Telegram-botti
+# Elukkavex — Web-dashboard, Telegram-botti ja kuvapalvelin
 
-ESP32-luukun etäohjaus. Kaksi komponenttia:
+ESP32-luukun etäohjaus. Kolme komponenttia:
 
 | Komponentti | Sijainti | Kuvaus |
 |-------------|----------|--------|
-| **Web-dashboard** | `index.html` | GitHub Pages, MQTT via WebSocket |
-| **Telegram-botti** | `bot/` | Push-ilmoitukset + ohjauspainikkeet |
+| **Web-dashboard** | `index.html` | GitHub Pages, MQTT via WebSocket, ei asennusta |
+| **Telegram-botti** | `bot/` | Push-ilmoitukset, ohjauspainikkeet, kuvat chattiin |
+| **Kuvapalvelin** | `server/` | Raspberry Pi: vastaanottaa JPEG, tallentaa, lähettää Telegramiin |
 
 **Live-dashboard:** https://spacerodento.github.io/elukkavex-web/
 
